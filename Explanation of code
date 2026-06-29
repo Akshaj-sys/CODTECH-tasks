@@ -1,2 +1,0 @@
-### File integrity checker code explanation 
-Import hashlib : Tells Python we want to use official cryptographic fingerprint tools.
