@@ -1,12 +1,12 @@
-import hashlib: Tells Python we want to use official cryptographic fingerprint tools.
+import hashlib : Tells Python we want to use official cryptographic fingerprint tools.
 
-import os: Allows the script to interact with your computer's operating system
+import os : Allows the script to interact with your computer's operating system
 
 import time: Brings in the clock management library.
 
 def calculate_file_hash(file_path): Defines the custom security tool.
 
-open(file_path, "rb"): Opens the target file in secure binary-reading mode.
+open(file_path, "rb"): Opens the target file in secure binary-reading mode, reading in binary mode is important because it ensures we hash the file's raw structural bytes exactly as they sit on the disk, ignoring any font or text editor formatting changes.
 
 f.read(4096): Reads the file in small pieces (4096 bytes) rather than loading a massive file into memory all at once, which prevents the system from crashing.
 
