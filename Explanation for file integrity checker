@@ -1,0 +1,25 @@
+import hashlib: Tells Python we want to use official cryptographic fingerprint tools.
+
+import os: Allows the script to interact with your computer's operating system
+
+import time: Brings in the clock management library.
+
+def calculate_file_hash(file_path): Defines the custom security tool.
+
+open(file_path, "rb"): Opens the target file in secure binary-reading mode.
+
+f.read(4096): Reads the file in small pieces (4096 bytes) rather than loading a massive file into memory all at once, which prevents the system from crashing.
+
+sha256_hash.hexdigest(): Converts the final raw mathematical hash into a readable, standard hexadecimal string of characters, making it easy to store in databases and read on-screen.
+
+file_hashes_directory = {}: Creates the database memory to keep track of the clean file states.
+
+os.listdir(TARGET_DIR): Scans the target directory and lists every file inside it.
+
+os.path.isfile(file_path): Double-checks that we are looking at an actual document or script, skipping empty directories.
+
+while True: Tells Python to repeat the block infinitely until it is manually turned off.
+
+time.sleep(3) Pauses the active camera feed for exactly 3 seconds so it doesn't drain the machine's CPU power.
+
+if current_hash != baseline_hash: This is the core defensive match check where the script catches an attacker.
